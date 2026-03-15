@@ -1,0 +1,16 @@
+(30pts) Write the instructions that will separate the Users information into a different collection
+
+first you would create a users collection that outputs only unique users
+by using $group, $first, $out
+
+$group - this would group the tweets based on the primary key user_ID so every specific user only appears once
+
+$first - this keeps only the first attribute of the instance
+
+$out - this creates a new users collection which would be the result of the seperation
+
+
+
+
+
+

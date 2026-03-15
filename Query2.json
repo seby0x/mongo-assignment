@@ -1,0 +1,15 @@
+[
+  {
+    "$sort": { "user.followers_count": -1 }
+  },
+  {
+    "$limit": 10
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "screen_name": "$user.screen_name",
+      "followers": "$user.followers_count"
+    }
+  }
+]
