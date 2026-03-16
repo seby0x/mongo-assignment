@@ -9,7 +9,13 @@ $first - this keeps only the first attribute of the instance
 
 $out - this creates a new users collection which would be the result of the seperation
 
+then with tweets only you would want to reference the users by ID 
 
+using $project
+
+project creates a primary key and removes user entirely 
+
+and $out writes specifically to the tweets only collection
 
 
 
